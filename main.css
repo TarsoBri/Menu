@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: all .2s;
+}
+a:hover{
+    opacity: .7;
+}
+
+.logo{
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-left: 64px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 34, 34);
+    height: 7vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin-right: 32px;
+}
+
+.nav-list li{
+    margin-left: 24px;
+    letter-spacing: 3px;
+}
+
+.back{
+    background: url('dhilip-antony-Eqc_Q15YbLU-unsplash.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 93vh;
+}
+
