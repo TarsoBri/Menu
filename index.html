@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Menu Responsivo</title>
 
     <link rel="stylesheet" href="main.css">
@@ -17,7 +18,6 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-
             </div>
                 <ul class="nav-list">
                     <li><a href="#">Início</a></li>
@@ -29,6 +29,21 @@
     </header>
 
     <section class="back"></section>
+
+
+    <script>
+        var $nav = document.querySelector('.nav-list');
+        var $menu = document.querySelector('.mobile-menu');
+
+        $menu.addEventListener('click', openMenu);
+        
+        function openMenu(){
+            $nav.classList.toggle('active');
+            $menu.classList.toggle('active');
+        }	
+
+
+    </script>
 
 </body>
 </html>
