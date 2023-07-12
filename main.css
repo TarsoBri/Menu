@@ -36,11 +36,17 @@ a:hover{
     margin-right: 32px;
 }
 
-.nav-list li{
-    margin-left: 24px;
+.list{
+    display:flex;
     letter-spacing: 3px;
 }
+.list li{
+    margin: 0 2vw;
+}
 
+.nets{
+    display: none;
+}
 
 .mobile-menu{
     display: none;
@@ -79,25 +85,42 @@ a:hover{
         margin: 0;
         right: 0;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         background-color: rgb(54, 32, 32);
         transform: translateX(100%);
         transition: transform .3s ease-in;
     }
-
-    .nav-list li{
+    
+    .list{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .list li{
         margin: 0;
     }
-    .nav-list li a{
-        font-size: 24px;
+    
+    .list a{
         display: block;
-        margin: 0;
-        padding: 50px;
-        
+        padding: 3vh 10vw;
+        border: 1px solid transparent;
+    }
+    .list a:hover{
+        border: dotted 1px white;
+    }
+    
+    .nets{
+        display: flex; 
+    }
+    .nets a{
+        display: block;
+        padding: 3vh 4vw;
+        font-size: 24px;
     }
 
 
+
+    
     .nav-list.active {
         transform: translateX(0);
     }
