@@ -8,10 +8,11 @@
 a{
     color: white;
     text-decoration: none;
-    transition: all .2s;
+    transition: all .3s;
 }
 a:hover{
-    opacity: .7;
+    opacity: .5;
+    border-bottom: 1px solid white;
 }
 
 .logo{
@@ -68,13 +69,15 @@ a:hover{
         margin-right: 32px;
     }
 
+    a:hover{
+        border: none;
+    }
+
     .nav-list{
         position: absolute;
         top: 8vh;
         margin: 0;
         right: 0;
-        width: 50vw;
-        height: 70vh;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -84,8 +87,14 @@ a:hover{
     }
 
     .nav-list li{
-        font-size: 24px;
         margin: 0;
+    }
+    .nav-list li a{
+        font-size: 24px;
+        display: block;
+        margin: 0;
+        padding: 50px;
+        
     }
 
 
